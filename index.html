@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <title>LIN EMOJI WEB</title>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="icon" type="image/svg+xml" href="image.png">
+
+</head>
+
+  <header>  
+      <a href="#"><img src="LIN.png"></a>
+      <h1 class="H1">LIN EMOJI WEB</h1>
+
+  </header>
+
+<body>
+  <center>
+    <div class="agrupar">
+
+      <br>
+
+      <br>
+      <img id="random-image" width="500">
+      <script>
+        var images = ["emoji-1585197_1920.png", "emoji-1585265_1920.png", "emoji-1585401_1920.png", "emoticon-1610573_1920.png", "emoticon-1611718_1920.png", "emoticon-1611977_1920.png", "emoticon-1626442_1920.png", "emoticon-1628080_1920.png", "emoticon-1634515_1920.png", "emoticon-1634586_1920.png", "emoticon-1659234_1920.png", "emoticon-1659233_1920.png", "emoticon-1659235_1920.png", "emoticon-1659551_1920.png", "emoticon-1669804_1920.png", "emoticon-1693696_1920.png", "emotion-1740913_1920.png"];
+        var randomImg = document.getElementById("random-image");
+
+        function getRandomImage() {
+          var randomNumber = Math.floor(Math.random() * images.length);
+          randomImg.src = images[randomNumber];
+        }
+
+        getRandomImage();
+        window.onload = getRandomImage;
+      </script>
+      <br>
+      <br><br>
+      <div class="color">
+        <h1 class="H12">Cambiar el color del rectángulo</h1>
+        <br>
+        <button style="background-color: red;" id="red-btn">Rojo</button>
+        <button style="background-color: blue;" id="blue-btn">Azul</button>
+        <button style="background-color: black; color: white;" id="black-btn">Negro</button>
+        <button style="background-color: green;" id="green-btn">Verde</button>
+        <button style="background-color: yellow;" id="yellow-btn">Amarillo</button>
+        <button style="background-color: pink;" id="pink-btn">Rosado</button>
+        <button style="background-color: purple;" id="purple-btn">Morado</button>
+        <button style="background-color: orange;" id="orange-btn">Naranja</button>
+        <button style="background-color: brown;" id="brown-btn">Café</button>
+        <button style="background-color: gray;" id="gray-btn">Gris</button>
+      </div>
+
+      <script>
+        var redBtn = document.getElementById("red-btn");
+        var blueBtn = document.getElementById("blue-btn");
+        var blackBtn = document.getElementById("black-btn");
+        var greenBtn = document.getElementById("green-btn");
+        var yellowBtn = document.getElementById("yellow-btn");
+        var pinkBtn = document.getElementById("pink-btn");
+        var purpleBtn = document.getElementById("purple-btn");
+        var orangeBtn = document.getElementById("orange-btn");
+        var brownBtn = document.getElementById("brown-btn");
+        var grayBtn = document.getElementById("gray-btn");
+        var colorBox = document.querySelector(".agrupar");
+
+        redBtn.addEventListener("click", function () {
+          colorBox.style.backgroundColor = "red";
+        });
+
+        blueBtn.addEventListener("click", function () {
+          colorBox.style.backgroundColor = "blue";
+        });
+
+        blackBtn.addEventListener("click", function () {
+          colorBox.style.backgroundColor = "black";
+        });
+
+        greenBtn.addEventListener("click", function () {
+          colorBox.style.backgroundColor = "green";
+        });
+
+        yellowBtn.addEventListener("click", function () {
+          colorBox.style.backgroundColor = "yellow";
+        });
+
+        pinkBtn.addEventListener("click", function () {
+          colorBox.style.backgroundColor = "pink";
+        });
+
+        purpleBtn.addEventListener("click", function () {
+          colorBox.style.backgroundColor = "purple";
+        });
+
+        orangeBtn.addEventListener("click", function () {
+          colorBox.style.backgroundColor = "orange";
+        });
+
+        brownBtn.addEventListener("click", function () {
+          colorBox.style.backgroundColor = "brown";
+        });
+
+        grayBtn.addEventListener("click", function () {
+          colorBox.style.backgroundColor = "gray";
+        });
+      </script>
+
+
+
+
+
+
+  
+
+    </div>
+  </center>
+
+  <div class="footer-dark">
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-3 item">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Web design</a></li>
+                        <li><a href="#">Development</a></li>
+                        <li><a href="#">Hosting</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-3 item">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="#">Company</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 item text">
+                    <h3>LIN EMOJI WEB</h3>
+                    <p>Esta página web está programada con HTML, CSS y JavaScript. Esta página tiene una función que cuando refrescas la página, te cambia el emoji que está en el centro. También puedes cambiar el color del rectángulo.</p>
+                </div>
+                <div class="col item social"><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i class="icon ion-social-facebook"></i></a><a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><i class="icon ion-social-twitter"></i></a><a href="https://www.snapchat.com/" target="_blank" rel="noopener noreferrer"><i class="icon ion-social-snapchat"></i></a><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><i class="icon ion-social-instagram"></i></a></div>
+            </div>
+            <p class="copyright">LIN EMOJI WEB</p>
+        </div>
+    </footer>
+</div>
+
+
+
+
+
+</body>
+
+</html>
